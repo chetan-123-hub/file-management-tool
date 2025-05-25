@@ -38,3 +38,8 @@ Reading and writing strings and characters to files
 Error handling during file operations (e.g., checking if a file is open)
 Structuring programs using functions
 Console-based user interaction and input validation
+
+*OUTPUT* 
+
+![Image](https://github.com/user-attachments/assets/c36b7a32-9cbb-474c-9a44-2db8cb23de73)
+
