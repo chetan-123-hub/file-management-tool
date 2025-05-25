@@ -5,7 +5,7 @@
 using namespace std;
 
 void writeToFile(const string& filename) {
-    ofstream outfile(filename); // opens file in write mode
+    ofstream outfile(filename); 
     if (!outfile) {
         cerr << "Error opening file for writing!" << endl;
         return;
@@ -13,7 +13,7 @@ void writeToFile(const string& filename) {
 
     string data;
     cout << "Enter text to write to the file (end with a blank line):" << endl;
-    cin.ignore(); // clear buffer
+    cin.ignore();
     while (true) {
         getline(cin, data);
         if (data.empty()) break;
@@ -24,7 +24,7 @@ void writeToFile(const string& filename) {
 }
 
 void appendToFile(const string& filename) {
-    ofstream outfile(filename, ios::app); // open file in append mode
+    ofstream outfile(filename, ios::app); 
     if (!outfile) {
         cerr << "Error opening file for appending!" << endl;
         return;
@@ -32,7 +32,7 @@ void appendToFile(const string& filename) {
 
     string data;
     cout << "Enter text to append to the file (end with a blank line):" << endl;
-    cin.ignore(); // clear buffer
+    cin.ignore(); 
     while (true) {
         getline(cin, data);
         if (data.empty()) break;
@@ -43,7 +43,7 @@ void appendToFile(const string& filename) {
 }
 
 void readFromFile(const string& filename) {
-    ifstream infile(filename); // open file for reading
+    ifstream infile(filename); 
     if (!infile) {
         cerr << "Error opening file for reading!" << endl;
         return;
